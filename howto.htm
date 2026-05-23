@@ -1,0 +1,688 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <title>Ye-chen Pan - How To Use This Site</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+  #g_title p, #g_footer p, #g_description p {
+    margin: 0;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	Browser Fixes
+  	-- -- -- -- -- -- --
+  	
+  	This file uses CSS filtering methods to fix various
+  	layout bugs.
+
+  	Each of the following three imported files is a 
+  	separate, browser-specific CSS file that keeps all 
+  	hacks out of the main style sheet.
+  	
+  	Over time, as supporting these browsers no longer
+  	remains a priority, cleaning up the hacks is as
+  	easy as deleting the @import statement below, or
+  	simply no longer linking this file from the HTML.
+  	
+  */
+
+  /* 
+    fix ie6 "peekaboo bug" using the "holly hack". 
+    Note, this style only gets applied to ie6
+  */
+  * html .wrapper {
+    height: 0.1%;
+  }
+
+  /* 
+   * IE5 mac - overrides the IE/Win hack 
+   */
+
+  /*\*//*/
+
+  * html #threecolumn div {
+  	height: auto;
+  }
+
+  /**/
+
+
+  /* 
+   * IE5/Win-specific CSS -ensures #container wraps all content on window resize
+   */
+
+  @media tty {
+   i{content:"\";/*" "*/}} * html #container { height: 1%; } /*";}
+  }/* */
+  /* Styling for editable elements. Eventually, this will be part of the style. */
+  .editable {
+    border: 1px dashed blue;
+  }
+  
+  #footer {
+    clear: both;
+  }
+  
+  /* Extra divs hidden by default. The custom CSS can override this though */
+  #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+    display: none;
+  }
+  
+  a img,:link img,:visited img {border: none;}
+
+  body {
+    text-align: center;
+  }
+  #container {
+    width: 680px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  #main-content {
+    float: center;
+    width: 640px;
+  }
+  #sidebar {
+    float: right;
+    width: 230px;
+  }
+  #footer {
+    clear: both;
+  }
+  /** BEGIN CUSTOM SKIN **/
+  /*
+
+  	-- -- -- -- -- -- --
+  	Base CSS
+  	-- -- -- -- -- -- --
+  	
+  	This file simply removes default styling on most HTML elements in 
+  	order to reduce the need to later override them.
+  	
+  */
+
+  h1,h2,h3,h4,h5,h6,pre,code,p {font-size: 1em;}
+  dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin: 0; padding: 0;}
+  a img,:link img,:visited img {border: none;}
+  address {font-style: normal;}/*
+
+  	-- -- -- -- -- -- --
+  	Type Scheme: Deco
+  	-- -- -- -- -- -- --
+  	
+  */
+
+  body {
+  	font: 76% Verdana, sans-serif;
+  }	
+
+  h1, h2, h3, h4, h5, h6, p.description {
+  	font-family: "Trebuchet MS", Trebuchet, sans-serif;
+  }
+  h1 {
+  	font-size: 3em;
+  	font-weight: bold;
+  	letter-spacing: 2px;
+  }
+  h2 {
+  	font-size: 2em;
+  	font-weight: normal;
+  }
+  h3 {
+  	font-size: 1.5em;
+  }
+  h4 {
+  	font-size: 1.2em;
+  	letter-spacing: 0.2em;
+  }
+  h5 {
+  	font-size: 1.2em;
+  }
+  h6 {
+  	font-size: 1em;
+  	font-weight: bold;
+  }
+
+  p, td {
+  	line-height: 1.8em;
+  }
+  code, kbd {
+  	font-size: 1.25em;
+  }/*
+
+  	-- -- -- -- -- -- --
+  	STYLE: Chemise
+  	-- -- -- -- -- -- --
+
+  */
+
+
+
+
+  /* ie6win */
+
+  #footer {
+  	height: 1%;
+  }
+
+  /* ie5mac */
+
+  /*\*//*/
+  #footer { height: auto; }
+  /**/
+
+  /* ie5 win */
+  @media tty {
+   i{content:"\";/*" "*/}} td, * html th { font-size: 0.8em; } h1 { height: 1%; } /*";}
+  }/* */
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  a:link {
+  	padding: 0 2px;
+  }
+  body {
+  	font: 80% "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  }
+  blockquote {
+          margin: 1em 1em;
+          font-style: italic;
+  }
+  caption {
+  	font-size: 1em;
+  	text-align: left;
+  	padding: 4px 6px;
+  }
+  	font-weight: bold;
+  }
+  dd {
+  	margin: 0 0 1em 1em;
+  }
+  hr {
+  	color: #222;
+  	background: #222;
+  	border-color: #222;
+  }
+  td {
+  	padding: 2px 5px;
+  	vertical-align: top;
+  }
+  th {
+  	font-size: 1em;
+  	padding: 2px 5px;
+  	text-align: left;
+  	border-top: solid 1px #000;
+  	border-right: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  }
+
+  td p {
+  	margin-top: 0;
+  }
+
+  ul li {
+  	margin-bottom: 0.8em;
+  }
+  ol li {
+  	list-style: lower-alpha;
+  	margin-left: 2em;
+  	margin-bottom: 0.8em;
+  }
+
+
+
+
+
+
+
+
+  /* Header
+  ----------------------------------------------- */
+  #container {
+  }
+
+  #header {
+  	border-bottom: solid 1px #000;
+  	position: relative;
+  	margin: 0;
+  	margin-bottom: 10px;
+  }
+  p.description {
+  	font-size: 1em;
+  	margin: 0;
+  	padding: 0.5em 15px;
+  	border-bottom: solid 1px #000;
+  }
+  #g_description {
+  	margin: 1em 0 1em 15px;
+  }
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  p {
+  	margin: 1em 0;
+  	line-height: 1.5;
+  }
+  td, td p {
+  	line-height: 1.5;
+  }
+  h1,h2,h3,h4,h5,h6 {
+  	font-family: "Trebuchet MS", arial, sans-serif;
+  }
+  h1 {
+  	text-align: left;
+  	font-weight: normal;
+  	font-size: 2em;
+  	font-weight: bold;
+  	line-height: 1.5em;
+  	padding: 30px 20px 10px 15px;
+  	margin: 0;
+  	border-top: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  }
+  h2 {
+  	font-size: 1.5em;
+  	color: #000;
+  	margin: 0 0 1em 0;
+  	background: url(/-/include/style/chemise/slate/h2.gif) no-repeat left bottom;
+
+  }
+  h3 {
+  	font-size: 1.2em;
+  	padding: 4px 10px;
+  	margin-top: 0.5em;
+  }
+  h4 {
+  	margin-top: 0.6em;
+  	margin-left: 0.2em;
+  	font-size: 0.9em;
+  }
+  h5 {
+  	padding-left: 10px;
+  	font-size: 1em;
+  }
+  h6 {
+  	font-size: 0.9em;
+  }
+
+  a:link {
+     	color: #f6952e;
+  }
+  a:hover {
+  	background-color: #dbd4a6;
+  }
+
+  /* sidebar
+  ----------------------------------------------- */
+  #sidebar, #sidebar-alternate {
+  	margin-bottom: 2em;
+  }
+  #sidebar h3, #sidebar-alternate h3 {
+  	font-weight: normal;
+  	font-size: 1.3em;
+  	border-top: solid 1px #000;
+  	margin-bottom: 0.5em;
+  }
+  #sidebar h4, #sidebar h5, #sidebar h6,
+  #sidebar-alternate h4, #sidebar-alternate h5, #sidebar-alternate h6,
+  #sidebar p, #sidebar-alternate p {
+  	margin-left: 10px;
+  	margin-right: 20px;
+  }
+
+  #sidebar li, #sidebar-alternate li {
+  	margin-bottom: 0.8em;
+  }
+  #sidebar .links {
+  	margin-bottom: 2em;
+  }
+  #adsense {
+  	text-align: center;
+  }
+
+
+  .editable {
+  	border: dashed 1px #666;
+  }
+
+
+
+  /* layout patches
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #sidebar {
+  	float: left;
+  }
+  #twocolumn-liquid-right #sidebar {
+  	float: right;
+  }
+  #threecolumn #sidebar-alternate {
+  	float: right;
+  }
+
+
+
+  /* Footer
+  ----------------------------------------------- */
+  #footer {
+  	padding: 1px 15px;
+  	border-top: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  	clear: both;
+  }
+  #footer hr {
+  	display: none;
+  }
+
+
+
+  /* fixed 1 column
+  ----------------------------------------------- */
+  #onecolumn #main-content .wrapper {
+  	margin: 20px;
+  }
+
+
+  /* fixed left 2 column
+  ----------------------------------------------- */
+  #twocolumn-left #main-content .wrapper {
+  	padding: 0 20px;
+  }
+
+
+
+  /* fixed right 2 column
+  ----------------------------------------------- */
+  #twocolumn-right #main-content .wrapper {
+  	padding: 0 20px;
+  }
+
+  /* fixed right 3 column
+  ----------------------------------------------- */
+  #threecolumn #main-content .wrapper {
+  	padding: 0 20px;
+  }
+  #threecolumn #sidebar h3, #threecolumn #sidebar-alternate h3 {
+  	margin-bottom: 0;
+  }
+
+  /* liquid left 2 column
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #main-content .wrapper {
+  	margin: 0 20px;
+  }
+
+
+  /* liquid right 2 column
+  ----------------------------------------------- */
+  #twocolumn-liquid-right #main-content .wrapper {
+  	margin: 0 20px;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	COLOR SCHEME: Asp
+  	-- -- -- -- -- -- --
+
+  */
+
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  body {
+  	color: #1C2023;
+  	background: #FFFFFF url(/-/includes/style/chemise/asp/body.gif) repeat-y center top;
+  }
+  caption {
+  	color: #fff;
+  	background: #2AA63B url(/-/includes/style/chemise/asp/h3.gif) repeat;
+  }
+  code, kbd {
+  	color: #139522;
+  }
+  dt {
+  	color: #139522;
+  }
+  hr {
+  	background: #604829;
+  	border-color: #604829;
+  	border-top: none;
+  }
+  th {
+  	color: #fff;
+  	background: #001474 url(/-/includes/style/chemise/asp/th.gif) repeat-x 0 0;
+  	border-top: solid 1px #63AFDF;
+  	border-right: solid 1px #002797;
+  	border-bottom: solid 1px #002797;
+  }
+
+
+
+
+
+
+
+
+  /* Header
+  ----------------------------------------------- */
+  #container {
+  	background: #fff url(/-/includes/style/chemise/asp/container.gif) repeat-x;
+  }
+
+  #header {
+  	border-bottom: solid 1px #7DA9C5;
+  }
+  p.description {
+  	color: #85C0E5;
+  	background: #0039A0 url(/-/includes/style/chemise/asp/description.gif) repeat-x 0 0;
+  	border-bottom: solid 1px #002797;
+  }
+
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  h1 {
+  	color: #fff;
+  	background: #55C76B url(/-/includes/style/chemise/asp/h1.gif) repeat-x left bottom;
+  	border-top: solid 1px #9EDFAA;
+  	border-bottom: solid 1px #63AFDF;
+  }
+  h2 {
+  	color: #0D83CE;
+  	background: url(/-/includes/style/chemise/asp/h2.gif) no-repeat left bottom;
+  }
+  h3 {
+  	color: #fff;
+  	background: #2AA63B url(/-/includes/style/chemise/asp/h3.gif) repeat;
+  }
+  h4 {
+  	color: #0D83CE;
+  	border-bottom: dotted 1px #7F9CCF;
+  }
+  h5 {
+  	color: #139522;
+  	background: url(/-/includes/style/chemise/asp/h5.gif) no-repeat left center;
+  }
+
+
+  /* sidebar
+  ----------------------------------------------- */
+  #sidebar, #sidebar-alternate {
+  	background: url(/-/includes/style/chemise/asp/sidebar.gif) repeat-x 0 0;
+  }
+  #sidebar h3, #sidebar-alternate h3 {
+  	color: #0D83CE;
+  	background: #E5E5E5 url(/-/includes/style/chemise/asp/sidebar-h3.gif) repeat-x left top;
+  	border-top: solid 1px #ddd;
+  }
+
+  .editable {
+  	border: dashed 1px #f00;
+  }
+
+
+
+  /* Footer
+  ----------------------------------------------- */
+  #footer {
+  	color: #fff;
+  	background: #55C76B url(/-/includes/style/chemise/asp/h1.gif) repeat-x left bottom;
+  	border-top: solid 1px #9EDFAA;
+  	border-bottom: solid 1px #0B8218;
+  }
+
+  /** END CUSTOM SKIN **/
+  </style>
+
+  <!-- Hack to avoid flash of unstyled content in IE -->
+  <script> </script>
+</head>
+
+<body id="onecolumn">
+  <div id="container">
+    <div class="wrapper">
+      <!-- /wrapper --><!-- /header -->
+      <div id="main-content">
+        <div class="wrapper">
+          <div class="content-item"><div id='g_body'><h3>Fund Families </h3><p>
+There are seven momentum ranking tables that I posted every week. I started 
+this site in 2004 with 2 families of mutual funds, SSPP and SELECT. Later in 
+2005, I added the ranking table of ETF due to the popularity of exchange 
+traded funds. SSPP is made up of 31 Fidelity mutual funds in my company's 401k 
+plan at that time,and SELECT has 40 funds from Fidelity's SELECT sector fund 
+group. ETF table was formed by 41 indexed funds which investor can buy and 
+sell from any discount brokage house. I did not have a specific criteria for 
+including a fund into the ranking table other than pick a few funds in 
+different investment styles, differenct industrial and regional sectors. In 
+doing so, I may overlook a few good performance funds. However, the intention 
+is to capture the different sector or global regional growth trends at the 
+different phases of economy cycle and trade the funds accordingly. As long as 
+the funds in the family can cover as much as the whole economy sectors with 
+enough volatility, we should be able to profit from them with above market 
+average return.
+
+In 2007, my company changed the makeup of the funds in our 401k plan and 
+reduced the number of Fidelity mutual funds. The reason I used only the 
+Fidelity mutual funds in SSPP was that their price can be tracked publicly so 
+that I can automate the ranking generation. In the new plan, a lot of fund 
+prices can only be quoted through the plan and can not be found elsewhere. To 
+overcome this change, I developed the rankings for all the funds in the new 
+401k plan, downloaded their price every week manually and posted them as nSSPP 
+while keeping the old ranking table.
+
+In addition to the change of SSPP, the popularity of exchange traded funds 
+grew exponentially and more funds were offered by different large fund 
+companies. After some studies, I added the sETF and iETF ranking tables to the 
+weekly postings. sETF contains 40 sector index funds and iETF contains 30 
+international index funds. In general, funds in ETF, sETF and iETF have higher 
+volatily and subjected to higher risk.
+
+This year I started to post the rankings of the funds in my company's Health 
+Saving Account (HSA) plan. There are only 15 funds in the plan and most them 
+charge more than 5 % of transaction fee for every purchase. although the fund 
+company will waive the transaction fee if you make the trade through the plan. 
+If you are not in the HSA plan, I do not recommend you to trade these funds 
+because of their high loads.
+</p>
+<h3>Momentum Rankings<br></h3>
+<p>
+Funds are ranked according to their average price momentum indices (AMI). AMI 
+is a smoothed form of current price momentum index (CMI) which shows the 
+fund's price momentum of the current week. The CMI of each fund in this case 
+is the percentage difference of its weekly
+
+closing price to its trend line, and the AMI is the moving average of CMI over 
+a period of time. These calculations are based on proprietary formuli and 
+performed every week after closing of the market. The funds at the top of 
+rankings are identified as funds with the strongest
+
+growth potential in the intermediate term. The basic concept is to stay with 
+the leaders as the market condition changes. In general, selling decisions are 
+much more difficult to make than buying decisions. Hence, trading strategies 
+can be developed based on the the rankings. </p>
+
+<h3>Trading Strategies</h3><p>
+There are several ways of using fund rankings to develop investment 
+strategies. One of the approaches I adopted and applied in the model trading 
+logs is to hold
+
+one top rank fund at a time and switch to another top rank fund when its rank 
+drops below 7th rank in 
+the family or if its AMI drops below 0. <b>It is important not to hold a fund 
+with negative AMI.</b> A fund is in an
+
+intermediate up trend when its AMI climbs above zero, and is in a down trend 
+when its AMI slides down below zero. In a severe bear market, all the AMIs in 
+the fund family will drop below zero. By selling funds with negative AMI, one 
+can avoid the inevitable severe bear market in the future.</p>
+
+<p>
+By changing the number of funds to hold or using different trading thresholds, 
+strategies with different diversification levels or aggressiveness can be 
+developed. For example, a multi-fund strategy that gives better 
+diversification can hold 2 or 3 top ranked funds at a time and a strategy with 
+a more aggressive threshold (20% than 30%) will result in shorter
+
+holding time and more frequent trading. Here are a couple of examples: </p><ul>
+<li> Strategy A: Buy the number 1 ranked fund, hold it, and check fund 
+rankings every week. When its rank drops below 5 or its AMI drops below 0, 
+sell it and buy the number 1 fund of that week (of course with
+
+positive AMI.) If none of the fund has positive AMI, buy the money market fund 
+or equivalent. </li><li> Strategy B: Divide your portfolio into 3 equal parts. 
+Buy the first top 3 ranked funds, hold them, and check fund rankings every 
+week. When one of the fund drops below 10th rank or its AMI drops below 0, 
+sell it and buy the number 1 fund of that week (again, do not buy
+
+funds with negative AMI.) If you already owned the number 1 fund, buy
+
+the number 2, and if you already owned the number 1 and number 2 funds , buy 
+the number 3 fund such that you will always hold 3 different
+
+funds in your portfolio (except for money market fund as warranted by
+
+market conditions.)</li><li>Strategy C: I found this on a for subscription web 
+site. It holds 5 equal part of top 5 ranked funds. Replace the fund when its 
+AMI ranking drops out of the top five, such that you always hold the top 5 
+ranked funds. </li><li>Strategy D+: I found these from another for 
+subscription site. They are more complicated. You can find the detail in 
+http://www.etfwealthbuilder.com/sample.html. </li></ul><p>For people who just 
+want to follow my model portfolio, here are a few ways to start with: <br></p>
+<ol><li>Jump right in 100% (higher risk), </li><li>Patiently wait for the next 
+position change (may take a long time), or
+</li><li>Invest the same amount of money every week to the fund I hold until 
+the next position change. </li></ol>
+
+Once a strategy is developed, the key to success is to apply it objectively, 
+consistently and not to stray from it. Discussions are welcomed, let me know 
+if you have any good ideas.
+
+<br><p align="right"><b><br></b></p><p><b></b></p><p><b></b></p><h3>Note on 
+Holding Restriction and Redemption Fees </h3><p>To curb excessive trading 
+activities, Fidelity monitors accounts which
+
+hold a fund in less a month in our 401k plan and will suspend trading
+
+priviliges if too much trading activities occur. For some funds, there is also 
+a 0.75% redemption fee if they were held for less than one
+
+month or in some instances, 3 months. Since the rankings are based on
+
+weekly price changes, I do not expect frequent tradings. To avoid
+
+suspension, my strategy in the trading log for SSPP imposes a one month 
+minimum holding period and pay no attention to the redemption fee. </p></div>
+</div>
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /main-content -->
+      <!-- /wrapper --><!-- /sidebar -->
+      <!-- /wrapper --><!-- /footer -->
+    </div>
+  </div>
+  <!-- /wrapper --><!-- /container -->
+</body>
+</html>
